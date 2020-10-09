@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<title>Endonezyam - Belajar Bahasa Turki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<!-- Fonts -->
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
+	
+	<!-- Linking Styles -->
+	<link rel="stylesheet" type="text/css" href="../normalize.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+
+	<!-- JQuery -->
+	<script src="../jquery.min.js"></script>
+	<script type="text/javascript" src="../main.js"></script>
+
+</head>
+<body>
+
+	<audio id="audio" src=""></audio>
+
+	<p>Yang perlu diperhatikan dalam pembacaan alfabet bahasa Turki:</p>
+
+	<ul class="a1-ul">
+		<li>
+			Dibaca seperti apa yang ditulis.
+		</li>
+		<li>
+			Dalam bahasa Indonesia huruf <i>f</i>, <i>l</i>, <i>m</i>, <i>n</i>, <i>r</i>, dan <i>s</i> dibaca dengan format <i>ef</i>, <i>el</i>, <i>em</i>, <i>en</i>, <i>er</i>, dan <i>es</i>. Dalam bahasa Turki dibaca terbalik, <i>fe</i>, <i>le</i>, <i>me</i>, <i>ne</i>, <i>re</i>, dan <i>se</i>.
+		</li>
+		<li>
+			Huruf <i>e</i> dalam bahasa Indonesia mempunyai 3 cara baca, yaitu <i>e</i> pada kata <i>médé</i>, <i>êlang</i>, dan <i>èmbèr</i>. Dalam bahasa Turki yang digunakan adalah <i>è</i> pada kata <i>ember</i>.
+		</li>
+	</ul>
+
+	<div class="a1-hr sep"></div>
+	
+	<p>Bahasa Turki menggunakan abjad latin, terdapat 29 huruf dimana:</p>
+
+	<div class="box a1-bor">
+			
+		<p>Tidak ada huruf:</p>
+
+		<p class="center" style="font-weight: bold;">Qq&nbsp;&nbsp;&nbsp;&nbsp;Ww&nbsp;&nbsp;&nbsp;&nbsp;Xx</p>
+
+		<p>Ditambahkan huruf:</p>
+
+		<p class="center" style="font-weight: bold;">Çç&nbsp;&nbsp;&nbsp;&nbsp;Ğğ&nbsp;&nbsp;&nbsp;&nbsp;İ/ı&nbsp;&nbsp;&nbsp;&nbsp;Öö&nbsp;&nbsp;&nbsp;&nbsp;Şş&nbsp;&nbsp;&nbsp;&nbsp;Üü</p>
+	
+	</div>
+
+	<div class="a1-hr sep"></div>
+
+	<p>Hampir semua huruf dibaca dengan cara yang sama dengan huruf dalam bahasa Indonesia. Secara umum yang beda adalah:</p>
+
+	<ul class="a1-ul">
+		<li>
+			<b><span class="A1 times">c</span></b> dibaca <i>je</i>
+		</li>
+		<li>
+			<b><span class="A1 times">ç</span></b> dibaca <i>ce</i>
+		</li>
+		<li>
+			<b><span class="A1 times">ğ</span></b> dibahas di bawah
+		</li>
+		<li>
+			<b><span class="A1 times">ı</span></b> (tanpa titik) dibaca <i>ê</i> seperti pada kata <i>elang</i>
+		</li>
+		<li>
+			<b><span class="A1 times">j</span></b> dibaca <i>zhe</i> (j halus)
+		</li>
+		<li>
+			<b><span class="A1 times">ö</span></b> dan <b><span class="A1 times">ü</span></b> dibahas di bawah
+		</li>
+		<li>
+			<b><span class="A1 times">ş</span></b> dibaca <i>sye</i>
+		</li>
+		<li>
+			<b><span class="A1 times">v</span></b> dibahas di bawah
+		</li>
+	</ul>
+
+	<div class="a1-hr sep"></div>
+
+	<h4 class="a1-h4">Tabel Abjad Bahasa Turki</h4>
+
+	<table class="a1-table alfabet">
+		<tr>
+			<th rowspan="2">Harf</th>
+			<th colspan="2">Telaffuz</th>
+			<th rowspan="2">ID</th>
+			<th colspan="2" rowspan="2">TR</th>
+			<th rowspan="2">Arti</th>
+		</tr>
+		<tr>
+			<th>Biasa</th>
+			<th>IPA</th>
+		</tr>
+		<tr>
+			<td>Aa</td>
+			<td>a</td>
+			<td>/a/</td>
+			<td><span class="A1">a</span>pi, p<span class="A1">a</span>di</td>
+			<td><span class="A1">a</span>d<span class="A1">a</span></td>
+			<td><button class="dinle" id="al01"><i class="fas fa-volume-up"></i></button></td>
+			<td>pulau</td>
+		</tr>
+		<tr>
+			<td>Bb</td>
+			<td>bè</td>
+			<td>/bɛ/</td>
+			<td><span class="A1">b</span>ahasa, se<span class="A1">b</span>ut</td>
+			<td><span class="A1">b</span>a<span class="A1">b</span>a</td>
+			<td><button class="dinle" id="al02"><i class="fas fa-volume-up"></i></button></td>
+			<td>ayah</td>
+		</tr>
+		<tr>
+			<td>Cc</td>
+			<td>jè</td>
+			<td>/d͡ʒɛ/</td>
+			<td><span class="A1">j</span>alan, man<span class="A1">j</span>a</td>
+			<td><span class="A1">c</span>am</td>
+			<td><button class="dinle" id="al03"><i class="fas fa-volume-up"></i></button></td>
+			<td>kaca</td>
+		</tr>
+		<tr>
+			<td>Çç</td>
+			<td>cè</td>
+			<td>/t͡ʃɛ/</td>
+			<td><span class="A1">c</span>akap, ka<span class="A1">c</span>a</td>
+			<td><span class="A1">ç</span>i<span class="A1">ç</span>ek</td>
+			<td><button class="dinle" id="al04"><i class="fas fa-volume-up"></i></button></td>
+			<td>bunga</td>
+		</tr>
+		<tr>
+			<td>Dd</td>
+			<td>dè</td>
+			<td>/dɛ/</td>
+			<td><span class="A1">d</span>ua, a<span class="A1">d</span>a</td>
+			<td><span class="A1">d</span>olap</td>
+			<td><button class="dinle" id="al05"><i class="fas fa-volume-up"></i></button></td>
+			<td>lemari</td>
+		</tr>
+		<tr>
+			<td>Ee</td>
+			<td>è</td>
+			<td>/ɛ/</td>
+			<td><span class="A1">e</span>mb<span class="A1">e</span>r, p<span class="A1">e</span>nd<span class="A1">e</span>k</td>
+			<td><span class="A1">e</span>v</td>
+			<td><button class="dinle" id="al06"><i class="fas fa-volume-up"></i></button></td>
+			<td>rumah</td>
+		</tr>
+		<tr>
+			<td>Ff</td>
+			<td>fè</td>
+			<td>/fɛ/</td>
+			<td><span class="A1">f</span>akir, maa<span class="A1">f</span></td>
+			<td><span class="A1">f</span>are</td>
+			<td><button class="dinle" id="al07"><i class="fas fa-volume-up"></i></button></td>
+			<td>tikus</td>
+		</tr>
+		<tr>
+			<td>Gg</td>
+			<td>gè</td>
+			<td>/gɛ/</td>
+			<td><span class="A1">g</span>una, ti<span class="A1">g</span>a</td>
+			<td><span class="A1">g</span>ül</td>
+			<td><button class="dinle" id="al08"><i class="fas fa-volume-up"></i></button></td>
+			<td>mawar</td>
+		</tr>
+		<tr>
+			<td>Ğğ</td>
+			<td>yumuşak<br>gè</td>
+			<td>-</td>
+			<td>-</td>
+			<td>a<span class="A1">ğ</span>aç</td>
+			<td><button class="dinle" id="al09"><i class="fas fa-volume-up"></i></button></td>
+			<td>pohon</td>
+		</tr>
+		<tr>
+			<td>Hh</td>
+			<td>hè</td>
+			<td>/hɛ/</td>
+			<td><span class="A1">h</span>ari, sa<span class="A1">h</span>am</td>
+			<td><span class="A1">h</span>alı</td>
+			<td><button class="dinle" id="al10"><i class="fas fa-volume-up"></i></button></td>
+			<td>karpet</td>
+		</tr>
+		<tr>
+			<td>Iı</td>
+			<td>ê</td>
+			<td>/ɯ/</td>
+			<td><span class="A1">e</span>mas, k<span class="A1">e</span>na</td>
+			<td><span class="A1">ı</span>spanak</td>
+			<td><button class="dinle" id="al11"><i class="fas fa-volume-up"></i></button></td>
+			<td>bayam</td>
+		</tr>
+		<tr>
+			<td>İi</td>
+			<td>i</td>
+			<td>/i/</td>
+			<td><span class="A1">i</span>tu, s<span class="A1">i</span>mpan</td>
+			<td><span class="A1">i</span>nek</td>
+			<td><button class="dinle" id="al12"><i class="fas fa-volume-up"></i></button></td>
+			<td>sapi</td>
+		</tr>
+		<tr>
+			<td>Jj</td>
+			<td>zhè</td>
+			<td>/ʒɛ/</td>
+			<td><i>televi<span class="A1">s</span>ion</i>, <i>mea<span class="A1">s</span>ure</i></td>
+			<td><span class="A1">j</span>ilet</td>
+			<td><button class="dinle" id="al13"><i class="fas fa-volume-up"></i></button></td>
+			<td>silet</td>
+		</tr>
+		<tr>
+			<td>Kk</td>
+			<td>kè</td>
+			<td>/kɛ/</td>
+			<td><span class="A1">k</span>ami, pa<span class="A1">k</span>sa</td>
+			<td><span class="A1">k</span>apı</td>
+			<td><button class="dinle" id="al14"><i class="fas fa-volume-up"></i></button></td>
+			<td>pintu</td>
+		</tr>
+		<tr>
+			<td>Ll</td>
+			<td>lè</td>
+			<td>/lɛ/</td>
+			<td><span class="A1">l</span>ekas, a<span class="A1">l</span>as</td>
+			<td><span class="A1">l</span>amba</td>
+			<td><button class="dinle" id="al15"><i class="fas fa-volume-up"></i></button></td>
+			<td>lampu</td>
+		</tr>
+		<tr>
+			<td>Mm</td>
+			<td>mè</td>
+			<td>/mɛ/</td>
+			<td><span class="A1">m</span>aka, dia<span class="A1">m</span></td>
+			<td><span class="A1">m</span>asa</td>
+			<td><button class="dinle" id="al16"><i class="fas fa-volume-up"></i></button></td>
+			<td>meja</td>
+		</tr>
+		<tr>
+			<td>Nn</td>
+			<td>nè</td>
+			<td>/nɛ/</td>
+			<td><span class="A1">n</span>ama, ta<span class="A1">n</span>ah</td>
+			<td><span class="A1">n</span>umara</td>
+			<td><button class="dinle" id="al17"><i class="fas fa-volume-up"></i></button></td>
+			<td>nomor</td>
+		</tr>
+		<tr>
+			<td>Oo</td>
+			<td>o</td>
+			<td>/o/</td>
+			<td><span class="A1">o</span>leh, k<span class="A1">o</span>ta</td>
+			<td><span class="A1">o</span>t<span class="A1">o</span>büs</td>
+			<td><button class="dinle" id="al18"><i class="fas fa-volume-up"></i></button></td>
+			<td>bus</td>
+		</tr>
+		<tr>
+			<td>Öö</td>
+			<td>ö</td>
+			<td>/œ/</td>
+			<td>-</td>
+			<td><span class="A1">ö</span>rdek</td>
+			<td><button class="dinle" id="al19"><i class="fas fa-volume-up"></i></button></td>
+			<td>bebek</td>
+		</tr>
+		<tr>
+			<td>Pp</td>
+			<td>pè</td>
+			<td>/pɛ/</td>
+			<td><span class="A1">p</span>asang, a<span class="A1">p</span>a</td>
+			<td><span class="A1">p</span>ara</td>
+			<td><button class="dinle" id="al20"><i class="fas fa-volume-up"></i></button></td>
+			<td>uang</td>
+		</tr>
+		<tr>
+			<td>Rr</td>
+			<td>rè</td>
+			<td>/rɛ/</td>
+			<td><span class="A1">r</span>aih, ba<span class="A1">r</span>a</td>
+			<td><span class="A1">r</span>esim</td>
+			<td><button class="dinle" id="al21"><i class="fas fa-volume-up"></i></button></td>
+			<td>gambar</td>
+		</tr>
+		<tr>
+			<td>Ss</td>
+			<td>sè</td>
+			<td>/sɛ/</td>
+			<td><span class="A1">s</span>ampai, a<span class="A1">s</span>li</td>
+			<td><span class="A1">s</span>aç</td>
+			<td><button class="dinle" id="al22"><i class="fas fa-volume-up"></i></button></td>
+			<td>rambut</td>
+		</tr>
+		<tr>
+			<td>Şş</td>
+			<td>syè</td>
+			<td>/ʃɛ/</td>
+			<td><span class="A1">sy</span>arat, mu<span class="A1">sy</span>awarah</td>
+			<td><span class="A1">ş</span>i<span class="A1">ş</span>e</td>
+			<td><button class="dinle" id="al23"><i class="fas fa-volume-up"></i></button></td>
+			<td>botol</td>
+		</tr>
+		<tr>
+			<td>Tt</td>
+			<td>tè</td>
+			<td>/tɛ/</td>
+			<td><span class="A1">t</span>ali, ma<span class="A1">t</span>a</td>
+			<td><span class="A1">t</span>abak</td>
+			<td><button class="dinle" id="al24"><i class="fas fa-volume-up"></i></button></td>
+			<td>piring</td>
+		</tr>
+		<tr>
+			<td>Uu</td>
+			<td>u</td>
+			<td>/u/</td>
+			<td><span class="A1">u</span>lang, b<span class="A1">u</span>mi</td>
+			<td><span class="A1">u</span>çak</td>
+			<td><button class="dinle" id="al25"><i class="fas fa-volume-up"></i></button></td>
+			<td>pesawat</td>
+		</tr>
+		<tr>
+			<td>Üü</td>
+			<td>ü</td>
+			<td>/y/</td>
+			<td>-</td>
+			<td><span class="A1">ü</span>z<span class="A1">ü</span>m</td>
+			<td><button class="dinle" id="al26"><i class="fas fa-volume-up"></i></button></td>
+			<td>anggur</td>
+		</tr>
+		<tr>
+			<td>Vv</td>
+			<td>vè</td>
+			<td>/vɛ/</td>
+			<td><i><span class="A1">v</span>erb</i>, <i><span class="A1">v</span>ase</i></td>
+			<td><span class="A1">v</span>azo</td>
+			<td><button class="dinle" id="al27"><i class="fas fa-volume-up"></i></button></td>
+			<td>vas</td>
+		</tr>
+		<tr>
+			<td>Yy</td>
+			<td>yè</td>
+			<td>/jɛ/</td>
+			<td><span class="A1">y</span>akin, pa<span class="A1">y</span>ung</td>
+			<td><span class="A1">y</span>umurta</td>
+			<td><button class="dinle" id="al28"><i class="fas fa-volume-up"></i></button></td>
+			<td>telur</td>
+		</tr>
+		<tr>
+			<td>Zz</td>
+			<td>zè</td>
+			<td>/z/</td>
+			<td><span class="A1">z</span>eni, la<span class="A1">z</span>im</td>
+			<td><span class="A1">z</span>ürafa</td>
+			<td><button class="dinle" id="al29"><i class="fas fa-volume-up"></i></button></td>
+			<td>jerapah</td>
+		</tr>
+	</table>
+
+	<div class="a1-hr sep"></div>
+
+	<h4 class="a1-h4">Ğğ (yumuşak g / g halus)</h3>
+
+		<p>Huruf <span class="A1 times">ğ</span> hampir tidak dianggap saat dibaca. Dibaca seperti tidak ada, tapi terdengar ayunan disana. Contoh:</p>
+
+		<ul class="a1-ul">
+			<li>
+				<span class="A1 times">ağaç</span> (pohon) dibaca <i>aaç</i>. (bukan a-aç, jangan dibaca terpisah).
+			</li>
+			<li>
+				<span  class="A1 times">Erdoğan</span> dibaca <i>Erdoan</i>.
+			</li>
+		</ul>
+
+		<div class="box a1-bor dial">
+			<p class="soru">S : "kalau nggak dibaca untuk apa ada huruf <span class="A1 times">ğ</span>?"</p>
+			<p class="cevap">C : Karena, kata asli bahasa Turki tidak pernah ada huruf vokal yang bersebelahan. Kata <span  class="A1 times">soğan</span> (bawang) misalnya. Dibaca <i>soan</i>, tetapi huruf <i>oa</i> adalah huruf vokal yang berdampingan, kan? Karenanya dibantu dengan <span class="A1 times">ğ</span> untuk menghindari itu.</p>
+		</div>
+
+		<div class="a1-hr sep"></div>
+
+		<h4 class="a1-h4">Öö dan Üü</h4>
+
+		<p>Perbedaan cara baca huruf <span  class="A1 times">Oo</span> dan <span  class="A1 times">Uu</span> dengan <span  class="A1 times">Öö</span> dan <span  class="A1 times">Üü</span> adalah posisi lidah. Ingat, yang berubah hanya lidah, bentuk bibir tetap. Untuk latihan cara mengucapkannya, coba rasakan bentuk bibir dan posisi lidah saat mengucapkan huruf:</p>
+
+		<p style="padding-left: 1em;"><span  class="A1 times">a</span> dan <span  class="A1 times">e</span></p>
+
+		<p style="padding-left: 1em;"><span  class="A1 times">ı</span> dan <span  class="A1 times">i</span></p>
+
+		<p>berulang-ulang, bisa dirasakan bedanya?</p>
+
+		<p>Bentuk bibir saat mengucapkan huruf <span class="A1 times">a</span> dan <span class="A1 times">e</span> sama, posisi lidah yang berbeda. Bentuk bibir saat mengucapkan <span class="A1 times">ı</span> dan <span class="A1 times">i</span> sama, posisi lidah yang berbeda. Begitu juga dengan huruf <span class="A1 times">o</span> dan <span class="A1 times">ö</span>. Saat mengucapkan huruf <span class="A1 times">o</span>, lidah tidak bersentuhan dengan geraham atas, rasakan dengan mengucapkan <span class="A1 times">a</span>, <span class="A1 times">ı</span> dan <span class="A1 times">o</span>. Dan saat mengucapkan huruf <span class="A1 times">ö</span>, lidah bersentuhan dengan geraham atas, rasakan dengan mengucapkan <span class="A1 times">e</span>, <span class="A1 times">i</span>, dan <span class="A1 times">ö</span>. Untuk huruf <span class="A1 times">ü</span> berlaku aturan yang sama.</p>
+
+		<div class="a1-hr sep"></div>
+
+		<h4 class="a1-h4">Vv</h4>
+
+		<p>Dalam bahasa Indonesia, <i>f</i> dibaca <i>ef</i> dan <i>v</i> dibaca <i>fe</i>. Jika ada dua kata masing-masing menggunakan huruf <i>f</i> dan <i>v</i>, sama sekali tidak ada perbedaan dalam melafalkannya. Dalam bahasa Turki, jika <i>f</i> dibaca <i>fe</i>. Bagaimana dengan <i>v</i>? Mirip, hanya lebih ditebalkan (digetarkan, seperti <i>v</i> dalam bahasa Inggris). Kadang <i>v</i> juga dibaca sebagai <i>w</i>, umumnya saat huruf <i>v</i> diapit oleh 2 huruf vokal (kecuali <span class="A1 times">evet</span>), contoh: <span class="A1 times">hava</span> dibaca hawa.</p>
+
+		<div class="a1-hr sep"></div>
+
+		<div class="box a1-bor not">
+
+			<p><b>Sama sekali tidak ada perbedaan tulisan dan bacaan kata dalam bahasa Turki!</b></p>
+
+			<p>Pelajari baik-baik cara baca setiap huruf, maka dipastikan akan benar setiap kata yang dibaca, atau setidaknya bisa dipahami oleh pendengar. Bagaimana jika kata yang diucapkan tidak dimengerti oleh pendengar? Berarti masih ada kesalahan dalam membaca hurufnya. Untuk itu disarankan mempelajari kembali cara baca setiap huruf.</p>
+
+		</div>
+
+	</body>
+	</html>

@@ -1,0 +1,560 @@
+/*
+Theme Name: Endonezyam
+Author: Clover
+Author URI: http://endonezyam.com
+Version: 1.1
+*/
+
+:root {
+	--text-dark: #444444;
+
+	--a1-dark: #e34602;
+	--a1: #fd9568;
+	--a1-light: #ffede6;
+
+	--a2-dark: #e3ab02;
+	--a2: #fcd14f;
+	--a2-light: #fff8e6;
+
+	--b1-dark: #a3ba12;
+	--b1: #dbef5d;
+	--b1-light: #fafde8;
+
+	--b2-dark: #039fe2;
+	--b2: #68d0fd;
+	--b2-light: #e6f7ff;
+
+	--c-dark: #5401e4;
+	--c: #9e67fe;
+	--c-light: #efe6ff;
+
+	--gi-dark: #c81e59;
+	--gi: #eb7aa2;
+	--gi-light: #fce9ef;
+}
+
+
+body {
+	width: 100%;
+	font-family: 'Roboto';
+	font-size: 1em;
+	color: var(--text-dark);
+	padding-bottom: 4em;
+	line-height: 1.4;
+	hyphens: none;
+}
+
+h4 {
+	border-radius: 0 0 .5em 0;
+	text-align: right;
+	padding: 0 1em .5em 1em;
+	margin: 1.4em .5em;
+}
+
+p {
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.times,
+table.td-times tr td {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 112%;
+}
+
+table {
+	min-width: 16em;
+	table-layout: auto;
+	border-collapse: collapse;
+	margin: 1em auto;
+}
+
+table tr th {
+	color: white;
+	font-weight: bold;
+}
+
+table tr th,
+table tr td {
+	padding: .5em 1em;
+}
+
+table tr td {
+	vertical-align: top;
+}
+
+div.sep {
+    height: 1px;
+    width: 100%;
+    margin: 4em auto;
+}
+
+div.box-cont {
+	display: table;
+	position: relative;
+	min-width: 14em;
+	max-width: 40em;
+	margin: 2em auto;
+}
+
+div.box {
+	border-radius: 1em;
+	padding: 0 1em;
+
+
+}
+
+ul {
+  list-style: none;
+  margin: 1em 0;
+}
+
+div.box ul,
+div.box ol {
+	padding: 0.5em 2em;
+}
+
+ul li::before {
+  content: "\22b1";
+  display: inline-block; 
+  width: 1.2em;
+  margin-left: -1.5em;
+}
+
+ul li {
+	padding-bottom: .5em;
+}
+
+ul li:last-of-type {
+	padding-bottom: 0;
+}
+
+hr.dot {
+	margin: 2em 0;
+}
+
+
+
+
+/* Alfabet */
+table.alfabet tr th {
+	height: 3em;
+}
+
+table.alfabet tr td {
+	height: 4em;
+}
+
+table.alfabet tr th,
+table.alfabet tr td {
+	vertical-align: middle;
+	padding: 0 1em;
+}
+
+
+table.alfabet tr td:first-child,
+table.alfabet tr td:nth-child(2),
+table.alfabet tr td:nth-child(3),
+table.alfabet tr td:nth-child(6) {
+	text-align: center;
+}
+
+table.alfabet tr td:nth-child(5) {
+	border-right: none;
+}
+
+table.alfabet tr td:nth-child(6) {
+	border-left: none;
+}
+
+table.alfabet tr td:first-child {
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+}
+
+
+
+/* Diyalog */
+
+p.soru {
+	font-style: italic;
+	padding-left: 1.5em;
+    text-indent:-1.5em;
+}
+
+p.cevap {
+	padding-left: 1.5em;
+    text-indent:-1.5em;
+}
+
+
+
+/* Text Örnek ve Not */
+
+span.not-text,
+span.orn-text {
+	position: absolute;
+	line-height: 0em;
+}
+
+span.not-text,
+span.orn-text {
+	right: 2em;
+}
+
+span.not-text i,
+span.orn-text i {
+	background-color: white;
+	padding: 0 .8em;
+	font-weight: bold;
+}
+
+
+
+/* Random */
+
+.center {
+	text-align: center;
+}
+
+.rumus {
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 140%;
+}
+
+table.cust-table1 tr td:not(:last-child) {
+	border-right: none;
+}
+
+table.cust-table1 tr td:not(:first-child) {
+	border-left: none;
+}
+
+table.cust-table3 tr td:first-child,
+table.cust-table2 tr th,
+table.cust-table2 tr td:not(:nth-child(2)) {
+	font-family: "Times New Roman", Times, serif;
+}
+
+p.soru-eki {
+	padding-left: 1.4em;
+	text-indent: -1.4em;
+}
+
+div.cevap p.olumlu {
+	margin: 0;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+div.cevap p.olumsuz {
+	margin-top: 0;
+	padding-left: 1.2em;
+	text-indent: -1.2em;
+}
+
+button.dinle {
+	background: none;
+	border: none;
+	color: var(--a1);
+}
+
+span.arrow:before {
+	content: "\22b1";
+}
+
+.box ol {
+	margin-bottom: 0;
+}
+
+
+
+/* Gi */
+
+span.Gi {
+	color: var(--gi-dark);
+}
+
+h4.gi-h4 {
+	border-right: 1px solid var(--gi);
+	border-bottom: 1px solid var(--gi);
+}
+
+div.gi-hr {
+	background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, var(--gi)), color-stop(0.98, white) );
+}
+
+hr.gi-dot {
+	border: 1px dotted var(--gi);
+}
+
+div.gi-bor {
+	border: 1px solid var(--gi);
+}
+
+ul.gi-ul li::before,
+h4.gi-h4,
+table.gi-table tr td a,
+i.gi-not-text,
+i.gi-orn-text {
+	color: var(--gi);
+}
+
+table.gi-table tr th {
+	background-color: var(--gi);
+}
+
+table.gi-table tr td,
+table.gi-table tr th {
+	border: 1px solid var(--gi-light);
+}
+
+table.gi-table.cust-table td:first-child {
+	background-color: var(--gi-light);
+	color: var(--gi-dark);
+}
+table.gi-table.cust-table3 tr td:first-child {
+	color: var(--gi-dark);
+}
+table.gi-table.cust-table4 tr td:nth-child(even) {
+	font-family: "Times New Roman", Times, serif;
+	color: var(--gi-dark);
+}
+
+
+
+
+/* A1 */
+
+span.A1 {
+	color: var(--a1-dark);
+}
+
+h4.a1-h4 {
+	border-right: 1px solid var(--a1);
+	border-bottom: 1px solid var(--a1);
+}
+
+div.a1-hr {
+	background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, var(--a1)), color-stop(0.98, white) );
+}
+
+hr.a1-dot {
+	border: 1px dotted var(--a1);
+}
+
+div.a1-bor {
+	border: 1px solid var(--a1);
+}
+
+ul.a1-ul li::before,
+h4.a1-h4,
+table.a1-table tr td a,
+i.a1-not-text,
+i.a1-orn-text {
+	color: var(--a1);
+}
+
+table.a1-table tr th {
+	background-color: var(--a1);
+}
+
+table.a1-table tr td,
+table.a1-table tr th {
+	border: 1px solid var(--a1-light);
+}
+
+table.a1-table.cust-table td:first-child {
+	background-color: var(--a1-light);
+	color: var(--a1-dark);
+}
+table.a1-table.cust-table3 tr td:first-child {
+	color: var(--a1-dark);
+}
+table.a1-table.cust-table4 tr td:nth-child(even) {
+	font-family: "Times New Roman", Times, serif;
+	color: var(--a1-dark);
+}
+
+
+
+
+/* A2 */
+span.A2 {
+	color: var(--a2-dark);
+}
+
+h4.a2-h4 {
+	border-right: 1px solid var(--a2);
+	border-bottom: 1px solid var(--a2);
+}
+
+div.a2-hr {
+	background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, var(--a2-dark)), color-stop(0.98, white) );
+}
+
+hr.a2-dot {
+	border: 1px dotted var(--a2-dark);
+}
+
+div.a2-bor {
+	border: 1px solid var(--a2-dark);
+}
+
+ul.a2-ul li::before,
+h4.a2-h4,
+table.a2-table tr td a,
+i.a2-not-text,
+i.a2-orn-text {
+	color: var(--a2-dark);
+}
+
+table.a2-table tr th {
+	background-color: var(--a2-dark);
+}
+
+table.a2-table tr td,
+table.a2-table tr th {
+	border: 1px solid var(--a2-light);
+}
+
+table.a2-table.cust-table td:first-child {
+	background-color: var(--a2-light);
+	color: var(--a2-dark);
+}
+table.a2-table.cust-table3 tr td:first-child {
+	color: var(--a2-dark);
+}
+table.a2-table.cust-table4 tr td:nth-child(even) {
+	font-family: "Times New Roman", Times, serif;
+	color: var(--a2-dark);
+}
+
+.a2-table.fas {
+	var(--a2-dark);
+}
+
+
+
+
+/* B1 */
+span.B1 {
+	color: var(--b1-dark);
+}
+
+h4.b1-h4 {
+	border-right: 1px solid var(--b1);
+	border-bottom: 1px solid var(--b1);
+}
+
+div.b1-hr {
+	background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, var(--b1-dark)), color-stop(0.98, white) );
+}
+
+hr.b1-dot {
+	border: 1px dotted var(--b1-dark);
+}
+
+div.b1-bor {
+	border: 1px solid var(--b1-dark);
+}
+
+ul.b1-ul li::before,
+h4.b1-h4,
+table.b1-table tr td a,
+i.b1-not-text,
+i.b1-orn-text {
+	color: var(--b1-dark);
+}
+
+table.b1-table tr th {
+	background-color: var(--b1-dark);
+}
+
+table.b1-table tr td,
+table.b1-table tr th {
+	border: 1px solid var(--b1-light);
+}
+
+table.b1-table.cust-table td:first-child {
+	background-color: var(--b1-light);
+	color: var(--b1-dark);
+}
+table.b1-table.cust-table3 tr td:first-child {
+	color: var(--b1-dark);
+}
+table.b1-table.cust-table4 tr td:nth-child(even) {
+	font-family: "Times New Roman", Times, serif;
+	color: var(--b1-dark);
+}
+
+.b1-table.fas {
+	var(--b1-dark);
+}
+
+
+
+
+/* B2 */
+span.B2 {
+	color: var(--b2-dark);
+}
+
+h4.b2-h4 {
+	border-right: 1px solid var(--b2);
+	border-bottom: 1px solid var(--b2);
+}
+
+div.b2-hr {
+	background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, var(--b2-dark)), color-stop(0.98, white) );
+}
+
+hr.b2-dot {
+	border: 1px dotted var(--b2-dark);
+}
+
+div.b2-bor {
+	border: 1px solid var(--b2-dark);
+}
+
+ul.b2-ul li::before,
+h4.b2-h4,
+table.b2-table tr td a,
+i.b2-not-text,
+i.b2-orn-text {
+	color: var(--b2-dark);
+}
+
+table.b2-table tr th {
+	background-color: var(--b2-dark);
+}
+
+table.b2-table tr td,
+table.b2-table tr th {
+	border: 1px solid var(--b2-light);
+}
+
+table.b2-table.cust-table td:first-child {
+	background-color: var(--b2-light);
+	color: var(--b2-dark);
+}
+table.b2-table.cust-table3 tr td:first-child {
+	color: var(--b2-dark);
+}
+table.b2-table.cust-table4 tr td:nth-child(even) {
+	font-family: "Times New Roman", Times, serif;
+	color: var(--b2-dark);
+}
+
+.b2-table.fas {
+	var(--b2-dark);
+}
+
+
+
+
+/* C */
+span.C {
+	color: var(--c-dark);
+}
