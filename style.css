@@ -59,7 +59,6 @@ p {
 .times,
 table.td-times tr td {
 	font-family: "Times New Roman", Times, serif;
-	font-size: 112%;
 }
 
 table {
@@ -129,8 +128,25 @@ ul li:last-of-type {
 	padding-bottom: 0;
 }
 
+ol li {
+	margin: .5em 0;
+}
+
+ol li:first-of-type {
+	margin-top: 0;
+}
+
+ol li:last-of-type {
+	margin-bottom: 0;
+}
+
 hr.dot {
 	margin: 2em 0;
+}
+
+hr.sep2 {
+	margin: .5em 0;
+	border: none;
 }
 
 
@@ -320,6 +336,10 @@ table.gi-table.cust-table3 tr td:first-child {
 table.gi-table.cust-table4 tr td:nth-child(even) {
 	font-family: "Times New Roman", Times, serif;
 	color: var(--gi-dark);
+}
+
+hr.gi-sep2 {
+	border: 1px solid var(--gi);
 }
 
 
@@ -549,6 +569,10 @@ table.b2-table.cust-table4 tr td:nth-child(even) {
 
 .b2-table.fas {
 	var(--b2-dark);
+}
+
+hr.b2-sep2 {
+	border-top: 1px solid var(--b2);
 }
 
 
